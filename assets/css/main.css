@@ -183,9 +183,16 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
 } */
-.header {
+/* .header {
   color: var(--default-color);
   background-color: rgb(255 198 198);
+  padding: 20px 0;
+  transition: all 0.5s;
+  z-index: 997;
+} */
+.header {
+  color: #ffffff;
+  background-color: rgb(0 0 0);
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -295,9 +302,9 @@ h6 {
     position: relative;
   }
 
-  .navmenu a,
+  /* .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: var(--nav-color)!important;
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
@@ -307,14 +314,26 @@ h6 {
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
-  }
-
+  } */
+  .navmenu a, .navmenu a:focus {
+    color: #fefeff !important;
+    padding: 18px 15px;
+    font-size: 16px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+}
   .navmenu a i,
   .navmenu a:focus i {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
     transition: 0.3s;
+    color: red;
   }
 
   .navmenu li:last-child a {
