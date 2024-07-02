@@ -138,7 +138,7 @@ h6 {
 .carousel-caption {
   position: absolute;
   right: 15%!important;
-  bottom: 38.25rem!important;
+  bottom: 36.25rem!important;
   padding-bottom: 1.25rem!important;
   color: #caff15;
   text-align: center;
@@ -855,15 +855,6 @@ section, .section {
 }
 
 /*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
-  [data-aos-delay] {
-    transition-delay: 0 !important;
-  }
-}
-
-/*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
@@ -911,13 +902,7 @@ section,
   overflow: clip;
 }
 
-@media (max-width: 1199px) {
 
-  section,
-  .section {
-    scroll-margin-top: 66px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Global Section Titles
@@ -1066,23 +1051,6 @@ section,
   color: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
-@media (max-width: 640px) {
-  .hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  .hero p {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-
-  .hero .btn-get-started,
-  .hero .btn-watch-video {
-    font-size: 13px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Featured Services Section
@@ -2081,11 +2049,127 @@ margin: auto;
   color: var(--accent-color);
 }
 
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
 
   /* Add your styles here */
+
+  @media (max-width: 1440px) {
+    .carousel-caption {
+      position: absolute;
+      bottom: 19.25rem !important;
+      padding-bottom: 1.25rem !important;
+      color: #caff15;
+      text-align: center;
+      /* z-index: 9999999; */
+      display: block !important;
+      background: #ffffffe6 !important;
+      padding: 12px;
+      background: #00000066 !important;
+      padding: 12px;
+      border: 4px inset #ffffff80;
+  }
+  
+   
+  }
+  
+  @media (max-width: 1366px) {
+    .carousel-caption {
+      position: absolute;
+      bottom: 19.25rem !important;
+      padding-bottom: 1.25rem !important;
+      color: #caff15;
+      text-align: center;
+      /* z-index: 9999999; */
+      display: block !important;
+      background: #ffffffe6 !important;
+      padding: 12px;
+      background: #00000066 !important;
+      padding: 12px;
+      border: 4px inset #ffffff80;
+  }
+   
+  }
+  @media (max-width: 1199px) {
+  
+    section,
+    .section {
+      scroll-margin-top: 66px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .carousel-caption {
+      position: absolute;
+      bottom: 7.25rem !important;
+      padding-bottom: 1.25rem !important;
+      color: #caff15;
+      text-align: center;
+      /* z-index: 9999999; */
+      display: block !important;
+      background: #ffffffe6 !important;
+      padding: 12px;
+      background: #00000066 !important;
+      padding: 12px;
+      border: 4px inset #ffffff80;
+  }
+  .carousel {
+    position: relative;
+    height: 100% !important;
+  }
+   
+  }
+  /*--------------------------------------------------------------
+  # Disable aos animation delay on mobile devices
+  --------------------------------------------------------------*/
+  @media screen and (max-width: 768px) {
+    [data-aos-delay] {
+      transition-delay: 0 !important;
+    }
+    .hero {
+      width: 100%;
+      /* min-height: 100vh; */
+      position: relative;
+      padding: 0px 0 0px 0 !important;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+  }
+  }
+  
+  
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  .hero .btn-get-started,
+  .hero .btn-watch-video {
+    font-size: 13px;
+  }
+  .carousel-caption {
+    position: absolute;
+    bottom: 5.25rem !important;
+    padding-bottom: 1.25rem !important;
+    color: #caff15;
+    text-align: center;
+    /* z-index: 9999999; */
+    display: block !important;
+    background: #ffffffe6 !important;
+    padding: 12px;
+    background: #00000066 !important;
+    padding: 12px;
+    border: 4px inset #ffffff80;
+}
+}
   @media (max-width: 575px) {
     .contact .php-email-form {
       padding: 20px;
@@ -2124,7 +2208,7 @@ color-mix(in srgb, var(--default-color), transparent 85%);
   width: 100%;
   /* min-height: 100vh; */
   position: relative;
-  padding: 70px 0 40px 0 !important;
+  padding: 70px 0 0px 0 !important;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -2136,10 +2220,11 @@ color-mix(in srgb, var(--default-color), transparent 85%);
   transition: all 0.5s;
   z-index: 997;
 }
+
 .hero p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 0px;
 }
 .about .content h3 {
   font-size: 1.5rem;
@@ -2153,6 +2238,20 @@ color-mix(in srgb, var(--default-color), transparent 85%);
 .header .logo img {
 margin-right: 8px;
 width: 160px;
+}
+.carousel-caption {
+  position: absolute;
+  bottom: 3.25rem !important;
+  padding-bottom: 1.25rem !important;
+  color: #caff15;
+  text-align: center;
+  /* z-index: 9999999; */
+  display: block !important;
+  background: #ffffffe6 !important;
+  padding: 12px;
+  background: #00000066 !important;
+  padding: 12px;
+  border: 4px inset #ffffff80;
 }
   }
   
@@ -2180,4 +2279,33 @@ width: 160px;
   margin-right: 8px;
   width: 160px;
   }
+
+  .carousel-caption {
+    position: absolute;
+    bottom: 3.25rem !important;
+    padding-bottom: 1.25rem !important;
+    color: #caff15;
+    text-align: center;
+    /* z-index: 9999999; */
+    display: block !important;
+    background: #ffffffe6 !important;
+    padding: 12px;
+    background: #00000066 !important;
+    padding: 12px;
+    border: 4px inset #ffffff80;
+}
+.hero {
+  width: 100%;
+  /* min-height: 100vh; */
+  position: relative;
+  padding: 70px 0 0px 0 !important;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.carosal-heading {
+  font-weight: 700;
+  font-size: 0.75rem;
+  font-family: var(--nav-font);
+}
   }
