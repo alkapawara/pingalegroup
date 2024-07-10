@@ -174,6 +174,68 @@ h6 {
 .about-us{
   border-radius: 15px;
 }
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+  background: #5e5c5d;
+  padding: 31px;
+}
+.carosal-heading {
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: var(--nav-font);
+}
+.card.pd-0 {
+  width: 100%;
+  border-radius: 0px !important;
+  padding: 0;
+  border: 0;
+  border: 3px solid #80808063;
+  /* border: 3px solid #f1efeb; */
+  border: 4px solid #f1efeb;
+}
+.card.pd-0:hover {
+    border: 4px solid #f1efeb;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.card-box {
+
+  flex-wrap: wrap;
+  gap: 20px;
+  transition: all 0.05s ease 0s;
+  cursor: pointer;
+  gap: 12px;
+  grid-auto-flow: row;
+  justify-content: stretch;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0px;
+  list-style: none;
+  margin-block-end: 0px;
+  display: grid;
+  -webkit-box-align: start;
+  align-items: start;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin: 32px 16px;
+}
+.img-box img {
+  width: 100%;
+}
+.pricing-item.pr-box {
+  padding: 16px 16px;
+  height: 100%;
+  border-radius: 15px;
+  background: #fcffff!important;
+  border: 2px solid #e0d9d9;
+}
 @keyframes php-email-form-loading {
   0% {
     transform: rotate(0deg);
@@ -2120,7 +2182,26 @@ section#services {
     position: relative;
     height: 100% !important;
   }
-   
+  .card-box {
+    flex-wrap: wrap;
+    gap: 20px;
+    transition: all 0.05s ease 0s;
+    cursor: pointer;
+    gap: 12px;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    list-style: none;
+    margin-block-end: 0px;
+    display: grid;
+    -webkit-box-align: start;
+    align-items: start;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin: 32px 16px;
+}
   }
   /*--------------------------------------------------------------
   # Disable aos animation delay on mobile devices
@@ -2138,6 +2219,26 @@ section#services {
       align-items: center;
       overflow: hidden;
   }
+  .card-box {
+    flex-wrap: wrap;
+    gap: 20px;
+    transition: all 0.05s ease 0s;
+    cursor: pointer;
+    gap: 12px;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    list-style: none;
+    margin-block-end: 0px;
+    display: grid;
+    -webkit-box-align: start;
+    align-items: start;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin: 32px 16px;
+}
   }
   
   
@@ -2254,6 +2355,26 @@ width: 160px;
   background: #00000066 !important;
   padding: 12px;
   border: 4px inset #ffffff80;
+}
+.card-box {
+  flex-wrap: wrap;
+  gap: 20px;
+  transition: all 0.05s ease 0s;
+  cursor: pointer;
+  gap: 12px;
+  grid-auto-flow: row;
+  justify-content: stretch;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0px;
+  list-style: none;
+  margin-block-end: 0px;
+  display: grid;
+  -webkit-box-align: start;
+  align-items: start;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+  margin: 32px 16px;
 }
   }
   
