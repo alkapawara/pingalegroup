@@ -194,16 +194,17 @@ h6 {
   width: 100%;
   border-radius: 0px !important;
   padding: 0;
-  border: 0;
-  border: 3px solid #80808063;
-  /* border: 3px solid #f1efeb; */
-  border: 4px solid #f1efeb;
+  border: 0; 
+  border-bottom: 1px solid #9b9b9b78;
+  padding: 0px 0px 16px;
+  height: 100%;
 }
 .card.pd-0:hover {
-    border: 4px solid #f1efeb;
+    /* border: 4px solid #f1efeb; */
     box-shadow: none;
     transition: all 0.3s ease;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 3px 0px 0px 0px;
 }
 .card-box {
 
@@ -235,6 +236,118 @@ h6 {
   border-radius: 15px;
   background: #fcffff!important;
   border: 2px solid #e0d9d9;
+}
+.pricing h3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.card-price {
+ 
+  font-weight: 500;
+  /* margin: 0; */
+  margin-top: -5px;
+  margin-bottom: 2px;
+  color: #4a4a4a;
+  font-size: 18px;
+}
+p.card-text {
+  color: grey;
+  color: rgba(2, 6, 12, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+}
+.card.pd-0 img {
+  transition: all .2s cubic-bezier(.15,.69,.83,.67);
+  display: block;
+  /* height: 190px; */
+  position: relative;
+  cursor: pointer;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-height: 190px;
+  
+}
+/* .card.pd-0 img:hover{
+  transform: scale(1.5); 
+  overflow: hidden;
+  width: 100%;
+  max-height: 190px;
+} */
+.card-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -8px;
+}
+button.btn.btn-add {
+  padding: 1px 31px;
+  border-radius: 2%;
+  background-image: linear-gradient(to right, #f60100, #e85826);
+  color: #fff !important;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  line-height: 35px;
+  border: none;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  text-align: center;
+  /* width: 110px; */
+  position: relative;
+  border-radius: 26px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: ProximaNova-Semibold, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+.card-text:last-child {
+  margin-bottom: 0;
+  font-family: ProximaNova-Regular, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  /* line-height: 1.6; */
+}
+.card-text:last-child {
+  margin-bottom: 0;
+  font-family: ProximaNova-Regular, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  /* line-height: 1.6; */
+}
+.paln-text{
+  font-family: ProximaNova-Regular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+p.card-text {
+  margin-top: 12px;
+}
+.green-card{
+  margin-bottom: 12px;
+}
+span.green-dot i {
+  color: green;
+  font-size: 6px;
+  /* background: rebeccapurple; */
+  border: 1px solid green;
+  border-radius: 7%;
+  padding: 6px;
+}
+.green-card {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 9px;
+}
+.green-card-txt{
+  font-size: 13px;
 }
 @keyframes php-email-form-loading {
   0% {
@@ -1564,6 +1677,8 @@ color-mix(in srgb, #f60100, transparent 94%);
   font-weight: 600;
   margin-bottom: 15px;
   font-size: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .pricing h4 {
@@ -1588,6 +1703,20 @@ color-mix(in srgb, #f60100, transparent 94%);
   font-size: 14px;
 }
 
+/* .pricing .cta-btn {
+  border: 1px solid var(--default-color);
+  color: var(--default-color);
+  display: block;
+  text-align: center;
+  padding: 10px 35px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--heading-font);
+  transition: 0.3s;
+  margin-top: 20px;
+  margin-bottom: 6px;
+} */
 .pricing .cta-btn {
   border: 1px solid var(--default-color);
   color: var(--default-color);
@@ -1601,12 +1730,16 @@ color-mix(in srgb, #f60100, transparent 94%);
   transition: 0.3s;
   margin-top: 20px;
   margin-bottom: 6px;
+  background-image: linear-gradient(to right, #242323, #322f2f);
+  color: white !important;
 }
 
 .pricing .cta-btn:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
   border-color: var(--accent-color);
+  background-image: linear-gradient(to right, #f60100, #e85826);
+  color: white!important;
 }
 
 .pricing ul {
@@ -1667,7 +1800,12 @@ color-mix(in srgb, #f60100, transparent 94%);
   color: var(--contrast-color);
   border-color: var(--accent-color);
 }
-
+.card-title {
+  margin-bottom: var(--bs-card-title-spacer-y);
+  color: var(--bs-card-title-color);
+  font-weight: 700;
+  font-family: ProximaNova-Regular, Helvetica, Arial, sans-serif;
+}
 @media (max-width: 992px) {
   .pricing .box {
     max-width: 60%;
