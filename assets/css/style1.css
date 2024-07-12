@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #3d4348; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #3e5055; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #f60100; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #e31e24; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 
@@ -137,8 +137,20 @@ h6 {
 /* ----------------------------------custom css------------------------ */
 a.cart-i i {
   font-size: 23px !important;
-  color: #fefeff !important;
+  color: #3d4348 !important;
 }
+.search-b{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-b a {
+  padding: 7px;
+}
+.search-b:hover,.search-b a:hover {
+  color:#e31e24!important;
+}
+
 .carousel-caption {
   position: absolute;
   right: 15%!important;
@@ -288,7 +300,7 @@ p.card-text {
 button.btn.btn-add {
   padding: 1px 31px;
   border-radius: 2%;
-  background-image: linear-gradient(to right, #f60100, #e85826);
+  background-image: linear-gradient(to right, #e31e24, #e85826);
   color: #fff !important;
   font-style: normal;
   font-stretch: normal;
@@ -398,9 +410,9 @@ section#pricing {
   z-index: 997;
 } */
 .header {
-  color: #ffffff;
-  background-color: rgb(0 0 0 / 64%);
-  padding: 20px 0;
+ 
+  background-color: rgb(255 255 255);
+  padding: 0px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -414,7 +426,8 @@ section#pricing {
 } */
 .header .logo img {
   margin-right: 8px;
-  width: 230px;
+  width: auto;
+  height: 130px;
 }
 
 .header .logo h1 {
@@ -550,17 +563,17 @@ section, .section {
     transition: 0.3s;
   } */
   .navmenu a, .navmenu a:focus {
-    color: #fefeff !important;
+    color: #3d4348 !important;
     padding: 18px 16px;
     font-size: 16px;
     font-family: var(--nav-font);
-    font-weight: 600;
+    font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
-
+    font-weight: 600;
 }
   .navmenu a i,
   .navmenu a:focus i {
@@ -581,7 +594,7 @@ section, .section {
     color: var(--nav-hover-color);
   } */
   .navmenu li:hover>a, .navmenu .active, .navmenu .active:focus {
-    color: #f60100!important;
+    color: #e31e24!important;
 }
   .navmenu .dropdown ul {
     margin: 0;
@@ -1258,7 +1271,7 @@ section,
 } */
 .featured-services {
   --background-color: 
-color-mix(in srgb, #f60100, transparent 94%);
+color-mix(in srgb, #e31e24, transparent 94%);
   padding: 40px 0;
 }
 .featured-services .service-item {
@@ -1760,7 +1773,7 @@ color-mix(in srgb, #f60100, transparent 94%);
   background: var(--accent-color);
   color: var(--contrast-color);
   border-color: var(--accent-color);
-  background-image: linear-gradient(to right, #f60100, #e85826);
+  background-image: linear-gradient(to right, #e31e24, #e85826);
   color: white!important;
 }
 
@@ -2479,7 +2492,7 @@ color-mix(in srgb, var(--default-color), transparent 85%);
 .header {
   color: #ffffff;
   background-color: rgb(0 0 0 / 64%);
-  padding: 20px 0;
+  padding: 0px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -2493,14 +2506,12 @@ color-mix(in srgb, var(--default-color), transparent 85%);
   font-size: 1.5rem;
   font-weight: 700;
 }
+
 .header .logo img {
   max-height: 30px;
-}
-
-
-.header .logo img {
 margin-right: 8px;
-width: 160px;
+width: auto;
+height: 130px;
 }
 .carousel-caption {
   position: absolute;
@@ -2560,7 +2571,7 @@ width: 160px;
   
   .header .logo img {
   margin-right: 8px;
-  width: 160px;
+  width: auto;
   }
 
   .carousel-caption {
