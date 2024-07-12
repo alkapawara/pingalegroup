@@ -198,13 +198,14 @@ h6 {
   border-bottom: 1px solid #9b9b9b78;
   padding: 0px 0px 16px;
   height: 100%;
+  /* border-top: 1px solid #9b9b9b78; */
 }
 .card.pd-0:hover {
     /* border: 4px solid #f1efeb; */
     box-shadow: none;
     transition: all 0.3s ease;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    padding: 3px 0px 0px 0px;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 3px 0px 0px 0px; */
 }
 .card-box {
 
@@ -265,18 +266,15 @@ p.card-text {
   position: relative;
   cursor: pointer;
   display: block;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
   width: 100%;
   max-height: 190px;
   
 }
-/* .card.pd-0 img:hover{
-  transform: scale(1.5); 
-  overflow: hidden;
-  width: 100%;
-  max-height: 190px;
-} */
+.card-body{
+  padding: 12px 0px!important;
+}
 .card-btn {
   display: flex;
   justify-content: space-between;
@@ -328,14 +326,20 @@ button.btn.btn-add {
 p.card-text {
   margin-top: 12px;
 }
-.green-card{
-  margin-bottom: 12px;
-}
+
 span.green-dot i {
   color: green;
   font-size: 6px;
   /* background: rebeccapurple; */
   border: 1px solid green;
+  border-radius: 7%;
+  padding: 4px;
+}
+span.red-dot i {
+  color: rgb(239, 2, 2);
+  font-size: 6px;
+  /* background: rebeccapurple; */
+  border: 1px solid rgb(128, 38, 0);
   border-radius: 7%;
   padding: 4px;
 }
@@ -345,9 +349,13 @@ span.green-dot i {
   justify-content: start;
   align-items: center;
   gap: 9px;
+  /* padding: 0px 0px 0px 16px; */
 }
 .green-card-txt{
   font-size: 13px;
+}
+section#pricing {
+  background-color: #f8fbfc;
 }
 @keyframes php-email-form-loading {
   0% {
