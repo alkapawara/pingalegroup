@@ -40,10 +40,242 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <!-- <style>
+  <style>
+    
+.dropdown {
+  padding: 20px 40px 20px 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  /* background: #c06162;
+  background: #34495e; */
+  position: relative;
+  font-size: 18px;
+  perspective: 1000px;
+  z-index: 100;
+}
+.dropdown:hover {
+  /* background: #2980b9; */
+  cursor: pointer;
+  color: #f60100;
+}
+.dropdown:hover .dropdown_menu li {
+  display: block;
+}
+.dropdown_menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  perspective: 1000px;
+  z-index: -1;
+}
+.dropdown_menu li {
+  display: none;
+  color: #090606;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  opacity: 0;
+}
+.dropdown_menu li:hover {
+  background-color: #f60100;
+  color: #fff;
+}
+.dropdown:hover .dropdown_menu--animated {
+  display: block;
+}
+.dropdown_menu--animated {
+  display: none;
+}
+.dropdown_menu--animated li {
+  display: block;
+  opacity: 1;
+}
+.dropdown_menu-6 {
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
+}
+.dropdown_menu-7 {
+  animation: rotateMenu 400ms ease-in-out forwards;
+  transform-origin: top center;
+}
+.dropdown_menu-8 {
+  animation: downOut 300ms ease-in-out forwards;
+  transform-origin: center center;
+}
+.dropdown_menu-9 {
+  animation: growOut 300ms ease-in-out forwards;
+  transform-origin: top center;
+}
+.dropdown_menu-10 {
+  animation: rotateY 300ms ease-in-out forwards;
+  transform-origin: top center;
+}
+.dropdown_menu-1 .dropdown_item-1 {
+  transform-origin: top center;
+  animation: slideDown 300ms 60ms ease-in-out forwards;
+}
+.dropdown_menu-1 .dropdown_item-2 {
+  transform-origin: top center;
+  animation: slideDown 300ms 120ms ease-in-out forwards;
+}
+.dropdown_menu-1 .dropdown_item-3 {
+  transform-origin: top center;
+  animation: slideDown 300ms 180ms ease-in-out forwards;
+}
+.dropdown_menu-1 .dropdown_item-4 {
+  transform-origin: top center;
+  animation: slideDown 300ms 240ms ease-in-out forwards;
+}
+.dropdown_menu-1 .dropdown_item-5 {
+  transform-origin: top center;
+  animation: slideDown 300ms 300ms ease-in-out forwards;
+}
+.dropdown_menu-2 .dropdown_item-1 {
+  transform-origin: top center;
+  animation: rotateX 300ms 60ms ease-in-out forwards;
+}
+.dropdown_menu-2 .dropdown_item-2 {
+  transform-origin: top center;
+  animation: rotateX 300ms 120ms ease-in-out forwards;
+}
+.dropdown_menu-2 .dropdown_item-3 {
+  transform-origin: top center;
+  animation: rotateX 300ms 180ms ease-in-out forwards;
+}
+.dropdown_menu-2 .dropdown_item-4 {
+  transform-origin: top center;
+  animation: rotateX 300ms 240ms ease-in-out forwards;
+}
+.dropdown_menu-2 .dropdown_item-5 {
+  transform-origin: top center;
+  animation: rotateX 300ms 300ms ease-in-out forwards;
+}
+.dropdown_menu-3 .dropdown_item-1 {
+  transform-origin: top center;
+  animation: rotateZ 300ms 60ms ease-in-out forwards;
+}
+.dropdown_menu-3 .dropdown_item-2 {
+  transform-origin: top center;
+  animation: rotateZ 300ms 120ms ease-in-out forwards;
+}
+.dropdown_menu-3 .dropdown_item-3 {
+  transform-origin: top center;
+  animation: rotateZ 300ms 180ms ease-in-out forwards;
+}
+.dropdown_menu-3 .dropdown_item-4 {
+  transform-origin: top center;
+  animation: rotateZ 300ms 240ms ease-in-out forwards;
+}
+.dropdown_menu-3 .dropdown_item-5 {
+  transform-origin: top center;
+  animation: rotateZ 300ms 300ms ease-in-out forwards;
+}
+.dropdown_menu-4 .dropdown_item-1 {
+  transform-origin: top center;
+  animation: scaleZ 300ms 60ms ease-in-out forwards;
+}
+.dropdown_menu-4 .dropdown_item-2 {
+  transform-origin: top center;
+  animation: scaleZ 300ms 120ms ease-in-out forwards;
+}
+.dropdown_menu-4 .dropdown_item-3 {
+  transform-origin: top center;
+  animation: scaleZ 300ms 180ms ease-in-out forwards;
+}
+.dropdown_menu-4 .dropdown_item-4 {
+  transform-origin: top center;
+  animation: scaleZ 300ms 240ms ease-in-out forwards;
+}
+.dropdown_menu-4 .dropdown_item-5 {
+  transform-origin: top center;
+  animation: scaleZ 300ms 300ms ease-in-out forwards;
+}
+.dropdown_menu-4 .dropdown_item-1 {
+  transform-origin: top center;
+  animation: scaleZ 300ms 60ms ease-in-out forwards;
+}
+.dropdown_menu-4 .dropdown_item-2 {
+  transform-origin: top center;
+  animation: scaleZ 300ms 120ms ease-in-out forwards;
+}
+.dropdown_menu-4 .dropdown_item-3 {
+  transform-origin: top center;
+  animation: scaleZ 300ms 180ms ease-in-out forwards;
+}
+.dropdown_menu-4 .dropdown_item-4 {
+  transform-origin: top center;
+  animation: scaleZ 300ms 240ms ease-in-out forwards;
+}
+.dropdown_menu-4 .dropdown_item-5 {
+  transform-origin: top center;
+  animation: scaleZ 300ms 300ms ease-in-out forwards;
+}
+
+.dropdown_menu-5 .dropdown_item-2 {
+  transform-origin: top center;
+  animation: translateX 300ms 120ms ease-in-out forwards;
+}
 
 
-  </style> -->
+@-moz-keyframes rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+@-webkit-keyframes rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+@-o-keyframes rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+@keyframes rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+
+
+  </style>
 </head>
 
 <body class="index-page">
@@ -66,6 +298,21 @@
           <li><a href="#">S'Mart</a></li>
 
           <li><a href="index.html#contact">Contact</a></li>
+         <li>
+          <ul class="men">
+           
+             <li class="dropdown dropdown-2">
+              Login
+              <ul class="dropdown_menu dropdown_menu-2">
+                <li class="dropdown_item-1">User Login</li>
+                <li class="dropdown_item-2">Client Login</li>
+                
+              </ul>
+            </li>
+            
+            
+          </ul>
+         </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
