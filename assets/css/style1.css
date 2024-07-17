@@ -259,6 +259,7 @@ a.cart-i i {
   margin-bottom: 15px;
   font-size: 1.5rem;
   font-weight: 700;
+  font-family: ProximaNova-Regular, Helvetica, Arial, sans-serif;
 }
 .card-price {
  
@@ -337,7 +338,9 @@ button.btn.btn-add {
 }
 .paln-text{
   font-family: ProximaNova-Regular, Helvetica, Arial, sans-serif;
-    font-size: 16px;
+  font-size: 16px;
+  color: rgba(2, 6, 12, 0.6);
+  text-align: start;
 }
 p.card-text {
   margin-top: 12px;
@@ -1130,6 +1133,7 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  font-family: ProximaNova-Regular, Helvetica, Arial, sans-serif;
 }
 
 .section-title h2:after {
@@ -1715,6 +1719,7 @@ color-mix(in srgb, #e31e24, transparent 94%);
   font-size: 20px;
   font-size: 1.5rem;
   font-weight: 700;
+  font-family: ProximaNova-Regular, Helvetica, Arial, sans-serif;
 }
 
 .pricing h4 {
