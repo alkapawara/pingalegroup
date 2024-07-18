@@ -2653,8 +2653,8 @@ section, .section {
       margin: auto;
   }
   .header .logo img {
-    max-height: 30px;
-  }
+    max-height: 55px;
+}
   
   .header .logo img {
   margin-right: 8px;

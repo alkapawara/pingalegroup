@@ -108,6 +108,11 @@ color-mix(in srgb, var(--accent-color), transparent 96%);
     background-color: #75a11b;
     color: #eaffb8;
 }
+/* 
+.plan-sub-box:nth-child(2) {
+    background-color: #75a11b;
+    color: #eaffb8;
+} */
 .pricing .description {
     font-size: 14px;
     font-family: ProximaNova-Regular, Helvetica, Arial, sans-serif;
@@ -238,7 +243,7 @@ color-mix(in srgb, var(--accent-color), transparent 96%);
     
              <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
                 <div class="pricing-item pr-box">
-                <div class="plan-sub-box plan-sub-box-mid">
+                <div class="plan-sub-box ">
                   <h3>Silver Plan</h3>
                   <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
                   <h4><sup>&#x20b9;</sup>0<span> / month</span></h4>
@@ -457,6 +462,19 @@ color-mix(in srgb, var(--accent-color), transparent 96%);
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    // Select all elements with the class 'plan-sub-box'
+    const planSubBoxes = document.querySelectorAll('.plan-sub-box');
+    
+    // Check if the second child exists
+    if (planSubBoxes.length > 1) {
+        // Add the 'plan-sub-box-mid' class to the second child
+        planSubBoxes[1].classList.add('plan-sub-box-mid');
+    }
+});
+    </script>
 </body>
 
 </html>
