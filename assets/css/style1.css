@@ -307,6 +307,10 @@ p.card-text {
     position: relative;
     display: block;
     padding-top: 63%;
+    transition: all ease-in-out 0.25s;
+}
+.img-card img:hover {
+  transform: scale(1.03);
 }
 .img-card img {
   position: absolute;
