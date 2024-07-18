@@ -247,6 +247,7 @@ a.cart-i i {
 .img-box img {
   width: 100%;
   height: 300px;
+  object-fit: cover;
 }
 
 .pricing-item.pr-box {
@@ -2624,6 +2625,7 @@ height: 130px;
 .img-box img {
   width: 100%;
   height: 300px;
+  object-fit: cover;
 }
 section, .section {
   color: var(--default-color);
