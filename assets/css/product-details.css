@@ -1,0 +1,103 @@
+/* styles.css */
+.rating .fa-star {
+    color: gold;
+}
+
+.rating .fa-star-o {
+    color: #ddd;
+}
+
+.review {
+    font-style: italic;
+}
+.product-d-img {
+    /* border: 1px solid #ecebeb; */
+    padding: 6px;
+    /* background: #ffffff; */
+    box-sizing: border-box;
+    box-shadow:1px 1px 8px 4px #ededed;
+    box-shadow: 0px 0px 6px 3px #ededed;
+}
+.rate i {
+    color: yellow;
+    cursor: pointer;
+}
+
+p.product-price-details {
+    font-weight: 700;
+    margin-top: 10px;
+    color: #4a4a4a;
+    font-size: 18px;
+}
+
+/* .horizobtal-line::before{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 10%;
+    background-color: red!important;
+} */
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: white!important;
+    color: red!important;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: ProximaNova-Regular, Helvetica, Arial, sans-serif;
+    border-bottom: 2px solid #e32824;
+    border-radius: 0;
+}
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: #4a4a4a!important;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    font-size: 18px!important;
+    font-weight: 600!important;
+    font-family: ProximaNova-Regular, Helvetica, Arial, sans-serif;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #e42824;
+}
+hr.horizobtal-line {
+    color: #c2c2c2;
+    opacity: 1;
+}
+
+ul#pills-tab {
+    border-bottom: 1px solid #dcdbdb;
+}
+
+label {
+    color: #4a4a4a;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+/* div#comment-box {
+
+    box-shadow: 0px 0px 6px 3px #ededed;
+} */
+div#pills-tabContent {
+    
+    padding: 20px; 
+}
+.tabContent{
+    box-shadow: 0px 0px 6px 3px #ededed;
+    padding: 20px 40px; 
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #fe8686;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgb(13 110 253 / 0%);
+}

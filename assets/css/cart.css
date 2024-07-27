@@ -1,0 +1,19 @@
+/* styles.css */
+.card-img {
+    max-height: 190px;
+    object-fit: contain; /* Ensures the entire image fits within the container without cropping */
+}
+.quantity {
+    margin-top: 10px;
+}
+.quantity span {
+    min-width: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.rating .fa-star {
+    color: gold;
+}
+.review {
+    font-style: italic;
+}

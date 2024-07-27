@@ -134,7 +134,7 @@ h6 {
 /* img.img-fluid.about {
   height: 94%;
 } */
-/* ----------------------------------custom css------------------------ */
+/* --------------------------------------------------------custom css------------------------ */
 a.cart-i i {
   font-size: 23px !important;
   color: #3d4348 !important;
@@ -479,7 +479,34 @@ section#pricing {
   position: relative;
   height: 100vh!important;
 }
+/* ---------------------------------------product details page css start ---------------------------------*/
 
+.product-info h4 {
+  margin: 0;
+  font-weight: 600;
+  font-family: ProximaNova-Regular, Helvetica, Arial, sans-serif;
+}
+.product-dec-box p {
+  font-family: ProximaNova-Regular, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: rgba(2, 6, 12, 0.6);
+}
+p.product-price-discount {
+  font-weight: 500;
+  margin-top: 10px;
+  color: #4a4a4a;
+  font-size: 18px;
+}
+input[type="radio"] {
+  opacity: 0;
+  margin-left: -12px;
+}
+.product-d-img img {
+  height: 350px;
+  object-fit: cover;
+  object-position: 50% 70%;
+}
+/* ---------------------------------------product details page css end ---------------------------------*/
 @media (max-width: 480px) {
   .header .logo img {
     max-height: 24px;
@@ -2653,13 +2680,16 @@ section, .section {
       margin: auto;
   }
   .header .logo img {
-    max-height: 55px;
+    max-height: 95px;
 }
   
   .header .logo img {
   margin-right: 8px;
   width: auto;
   }
+  .product-info {
+    margin-top: 18px;
+}
 
   .carousel-caption {
     position: absolute;
@@ -2689,6 +2719,8 @@ section, .section {
   font-size: 0.75rem;
   font-family: var(--nav-font);
 }
+
+
   }
 
 
@@ -3034,6 +3066,62 @@ section, .section {
       padding: 13px 20px;
       font-size: 13px;
     }
+  }
+  
+  @media (max-width: 576px){
+    .header .logo img {
+      max-height: 90px;
+      margin-right: 8px;
+      width: auto;
+      height: 130px;
+  }
+    .hero-slider .slide-inner {
+      width: 100%;
+      height: 80vh;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      background-size: cover;
+      background-position: 47% 99%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      background-repeat: no-repeat;
+  }
+    .hero-slider .swiper-container {
+      width: 100%;
+      height: 80vh;
+      position: absolute;
+      left: 0;
+      top: 0;
+  }
+  .hero-style {
+    /* height: 600px; */
+    height: 80vh;
+}
+
+.card-box {
+  flex-wrap: wrap;
+  gap: 20px;
+  transition: all 0.05s ease 0s;
+  cursor: pointer;
+  gap: 12px;
+  grid-auto-flow: row;
+  justify-content: stretch;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0px;
+  list-style: none;
+  margin-block-end: 0px;
+  display: grid;
+  -webkit-box-align: start;
+  align-items: start;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+  margin: 32px 0px;
+}
   }
   
   

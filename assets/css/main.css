@@ -1700,8 +1700,16 @@ color-mix(in srgb, #f60100, transparent 94%);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   /* padding: 20px 0px 30px 20px; */
   box-sizing: border-box;
-  border-top: 3px solid #291d1d;
-  border-bottom: 3px solid #181010;
+  /* border-top: 3px solid #291d1d; */
+  /* border-bottom: 3px solid #181010;
+  border-bottom: 3px solid #f60100; */
+ cursor: pointer;
+ text-align: center;
+ font-weight: 600;
+}
+.pricing .pricing-item:hover{
+  box-shadow: 0px 0px 8px rgb(244 11 11 / 32%);
+  border-bottom: 2px solid #f60100;
 }
 /* .pricing-item:hover {
 
@@ -1710,8 +1718,8 @@ color-mix(in srgb, #f60100, transparent 94%);
   border-bottom: 3px solid #f60100;
 } */
 .pricing-item.active {
-  border-top: 3px solid #f60100;
-  border-bottom: 3px solid #f60100;
+  /* border-top: 3px solid #f60100; */
+  /* border-bottom: 3px solid #f60100; */
 }
 /* .pricing-item.active:hover {
   border-top: 3px solid #291d1d;
@@ -2582,7 +2590,7 @@ width: 160px;
   
   .header .logo img {
   margin-right: 8px;
-  width: 160px;
+  width: 130px;
   }
 
   .carousel-caption {
