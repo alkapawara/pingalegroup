@@ -514,6 +514,22 @@ input[type="radio"] {
   object-fit: cover;
   object-position: 50% 70%;
 }
+
+button.btn.btn-add-dtails {
+  background-color: #e31e24;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: ProximaNova-Semibold, Helvetica, Arial, sans-serif;
+  text-transform: capitalize;
+}
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #e31e24!important;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgb(13 110 253 / 0%)!important;
+}
 /* ---------------------------------------product details page css end ---------------------------------*/
 @media (max-width: 480px) {
   .header .logo img {
@@ -1784,9 +1800,9 @@ color-mix(in srgb, #e31e24, transparent 94%);
 img.swiggy-img {
   width: 100%;
   max-width: 180px;
-  box-shadow: 1px 1px 10px 4px #003eff0f;
+  /* box-shadow: 1px 1px 10px 4px #003eff0f; */
   height: 115px;
-  border: 2px solid #0c0f841c;
+  /* border: 2px solid #0c0f841c; */
 
 }
 section#consumer-section {
@@ -1797,7 +1813,7 @@ section#consumer-section {
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin-top: -38px;
+  margin-top: -90px;
   align-items: center;
 }
 /*--------------------------------------------------------------
@@ -1817,7 +1833,7 @@ section#consumer-section {
   font-size: 1.5rem;
   font-weight: 700;
   font-family: ProximaNova-Regular, Helvetica, Arial, sans-serif;
-  padding: 1px 75px;
+  padding: 20px 75px 2px;
 }
 
 .pricing h4 {
@@ -2914,6 +2930,8 @@ section, .section {
     transition:all .2s ease;
     margin: 5px;
   }
+
+
   
   .hero-slider .swiper-pagination-bullet-active {
     opacity:1;
@@ -2924,6 +2942,8 @@ section, .section {
   .hero-slider .swiper-pagination-fraction {
     bottom: 30px;
   }
+
+
   
   @media screen and (min-width: 992px) {
     /* .hero-slider .swiper-container-horizontal > .swiper-pagination-bullets,
@@ -3114,7 +3134,7 @@ section, .section {
   }
     .hero-slider .slide-inner {
       width: 100%;
-      height: 80vh;
+      height: 70vh;
       position: absolute;
       left: 0;
       top: 0;
@@ -3129,14 +3149,14 @@ section, .section {
   }
     .hero-slider .swiper-container {
       width: 100%;
-      height: 80vh;
+      height: 70vh;
       position: absolute;
       left: 0;
       top: 0;
   }
   .hero-style {
     /* height: 600px; */
-    height: 80vh;
+    height: 70vh;
 }
 
 .card-box {
@@ -3163,7 +3183,7 @@ section, .section {
 .img-box-bt {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
   margin-top: -38px;
   flex-direction: column;
   align-items: center;
@@ -3171,10 +3191,16 @@ section, .section {
 
 img.swiggy-img {
   width: 100%;
-  max-width: 70%;
-  box-shadow: 1px 1px 10px 4px #003eff0f;
-  height: auto;
-  border: 2px solid #0c0f841c;
+  max-width: 100%;
+  /* box-shadow: 1px 1px 10px 4px #003eff0f; */
+  height: 130px;
+  /* border: 2px solid #0c0f841c; */
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 10px;
+  position: relative;
 }
   }
   
