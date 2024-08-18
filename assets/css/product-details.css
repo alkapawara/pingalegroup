@@ -241,6 +241,9 @@ label.form-check-label a {
   color: #0d6efd !important;
   /* font-weight: 400; */
 }
+textarea#exampleFormControladdress {
+  border-radius: 0;
+}
 input#gridCheck {
   padding: 8px;
 }
